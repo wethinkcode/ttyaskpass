@@ -1,6 +1,6 @@
 [package]
 name = "ttyaskpass"
-version = "2.0.1"
+version = "2.0.2"
 authors = ["quininer kel <quininer@live.com>"]
 description = "a safely passphrase prompt library."
 repository = "https://github.com/quininer/ttyaskpass"
@@ -18,5 +18,6 @@ doc = false
 libc = "0.2"
 bstr = "0.2"
 rand = "0.7"
-mortal = "0.2"
+# for terminfo update
+mortal = {version = "~0.2.4", git = "https://github.com/emabee/mortal", rev = "68e5c3a2bd7f3c3ce0c88ed24f9017b7e0416070"}
 sha3 = "0.8"
